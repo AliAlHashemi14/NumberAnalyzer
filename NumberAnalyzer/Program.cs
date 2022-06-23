@@ -13,7 +13,7 @@ do
     int response = 0;
 
     //validate that the number is positive and between specified range. If not, prompt again
-    while( int.TryParse(Console.ReadLine(), out response) != true )
+    while (!int.TryParse(Console.ReadLine(), out response) || (response < 1 || response > 100))
     {
         Console.WriteLine("Please enter a positive number between 1 and 100.");
         
