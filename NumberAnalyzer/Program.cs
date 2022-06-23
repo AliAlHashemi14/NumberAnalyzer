@@ -30,13 +30,13 @@ do
     {
         Console.WriteLine(response + " is odd and less than 60.");
     }
-    else if(response % 2 == 0 && response >= 2 && response <= 24)
+    else if(response >= 2 && response <= 24)
     {
-        Console.WriteLine(response + " is even and less than 25.");
+        Console.WriteLine("Even and less than 25.");
     }
-    else if(response % 2 == 0 && response >= 26 && response <= 60)
+    else if(response >= 26 && response <= 60)
     {
-        Console.WriteLine(response + " is even and between 26 and 60 inclusive.");
+        Console.WriteLine("Even and between 26 and 60 inclusive.");
     }
     else if(response % 2 == 0 && response > 60)
     {
